@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4097C15524BF66930054A442 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4097C15424BF66930054A442 /* AppDelegate.m */; };
 		4097C15824BF66930054A442 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4097C15724BF66930054A442 /* SceneDelegate.m */; };
-		4097C15B24BF66930054A442 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4097C15A24BF66930054A442 /* ViewController.m */; };
 		4097C15E24BF66930054A442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4097C15C24BF66930054A442 /* Main.storyboard */; };
 		4097C16124BF66930054A442 /* MemoObjC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4097C15F24BF66930054A442 /* MemoObjC.xcdatamodeld */; };
 		4097C16324BF669C0054A442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4097C16224BF669C0054A442 /* Assets.xcassets */; };
@@ -23,8 +22,6 @@
 		4097C15424BF66930054A442 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4097C15624BF66930054A442 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		4097C15724BF66930054A442 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		4097C15924BF66930054A442 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4097C15A24BF66930054A442 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4097C15D24BF66930054A442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4097C16024BF66930054A442 /* MemoObjC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MemoObjC.xcdatamodel; sourceTree = "<group>"; };
 		4097C16224BF669C0054A442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,8 +64,6 @@
 				4097C15424BF66930054A442 /* AppDelegate.m */,
 				4097C15624BF66930054A442 /* SceneDelegate.h */,
 				4097C15724BF66930054A442 /* SceneDelegate.m */,
-				4097C15924BF66930054A442 /* ViewController.h */,
-				4097C15A24BF66930054A442 /* ViewController.m */,
 				4097C15C24BF66930054A442 /* Main.storyboard */,
 				4097C16224BF669C0054A442 /* Assets.xcassets */,
 				4097C16424BF669C0054A442 /* LaunchScreen.storyboard */,
@@ -150,7 +145,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4097C16924BF669C0054A442 /* main.m in Sources */,
-				4097C15B24BF66930054A442 /* ViewController.m in Sources */,
 				4097C16124BF66930054A442 /* MemoObjC.xcdatamodeld in Sources */,
 				4097C15524BF66930054A442 /* AppDelegate.m in Sources */,
 				4097C15824BF66930054A442 /* SceneDelegate.m in Sources */,
