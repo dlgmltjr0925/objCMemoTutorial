@@ -15,6 +15,7 @@
 		4097C16624BF669C0054A442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4097C16424BF669C0054A442 /* LaunchScreen.storyboard */; };
 		4097C16924BF669C0054A442 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4097C16824BF669C0054A442 /* main.m */; };
 		4097C17224BF6E400054A442 /* Memo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4097C17124BF6E400054A442 /* Memo.m */; };
+		4097C17524BF72A90054A442 /* MemoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4097C17424BF72A90054A442 /* MemoListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		4097C16824BF669C0054A442 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4097C17024BF6E400054A442 /* Memo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Memo.h; sourceTree = "<group>"; };
 		4097C17124BF6E400054A442 /* Memo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Memo.m; sourceTree = "<group>"; };
+		4097C17324BF72A90054A442 /* MemoListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoListTableViewController.h; sourceTree = "<group>"; };
+		4097C17424BF72A90054A442 /* MemoListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 				4097C16724BF669C0054A442 /* Info.plist */,
 				4097C16824BF669C0054A442 /* main.m */,
 				4097C15F24BF66930054A442 /* MemoObjC.xcdatamodeld */,
+				4097C17324BF72A90054A442 /* MemoListTableViewController.h */,
+				4097C17424BF72A90054A442 /* MemoListTableViewController.m */,
 			);
 			path = MemoObjC;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4097C17224BF6E400054A442 /* Memo.m in Sources */,
+				4097C17524BF72A90054A442 /* MemoListTableViewController.m in Sources */,
 				4097C16924BF669C0054A442 /* main.m in Sources */,
 				4097C16124BF66930054A442 /* MemoObjC.xcdatamodeld in Sources */,
 				4097C15524BF66930054A442 /* AppDelegate.m in Sources */,
