@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4097C15024BF66930054A442 /* MemoObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4097C15024BF66930054A442 /* baloMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baloMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4097C15324BF66930054A442 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4097C15424BF66930054A442 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4097C15624BF66930054A442 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		4097C15124BF66930054A442 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4097C15024BF66930054A442 /* MemoObjC.app */,
+				4097C15024BF66930054A442 /* baloMemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +96,7 @@
 			);
 			name = MemoObjC;
 			productName = MemoObjC;
-			productReference = 4097C15024BF66930054A442 /* MemoObjC.app */;
+			productReference = 4097C15024BF66930054A442 /* baloMemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -296,12 +296,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YWHVN6S55M;
 				INFOPLIST_FILE = MemoObjC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.balocode.MemoObjC;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = baloMemo;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -313,12 +314,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YWHVN6S55M;
 				INFOPLIST_FILE = MemoObjC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.balocode.MemoObjC;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = baloMemo;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
