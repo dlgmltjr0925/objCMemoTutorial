@@ -2,7 +2,7 @@
 //  MemoListTableViewController.m
 //  MemoObjC
 //
-//  Created by 이희석 on 2020/07/16.
+//  Created by 이희석 on 2020/08/04.
 //  Copyright © 2020 Hee Seok Lee. All rights reserved.
 //
 
@@ -17,14 +17,24 @@
 
 @implementation MemoListTableViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    NSLog(@"viewWillAppear");
+    
+    [self.tableView reloadData];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSLog(@"viewDidLoad");
+    
     self.formatter = [[NSDateFormatter alloc] init];
-//    self.formatter.dateStyle = NSDateFormatterMediumStyle;
     self.formatter.dateStyle = NSDateFormatterLongStyle;
     self.formatter.timeStyle = NSDateFormatterNoStyle;
-    self.formatter.locale = [NSLocale localeWithLocaleIdentifier:@"Ko_Kr"];
+    self.formatter.locale = [NSLocale localeWithLocaleIdentifier:@"Ko_kr"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -44,15 +54,13 @@
     return [[Memo dummyMemoList] count];
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    
-//     Configure the cell...
     
     Memo *target = [[Memo dummyMemoList] objectAtIndex:indexPath.row];
     cell.textLabel.text = target.content;
     cell.detailTextLabel.text = [self.formatter stringFromDate:target.insertDate];
+    
     return cell;
 }
 

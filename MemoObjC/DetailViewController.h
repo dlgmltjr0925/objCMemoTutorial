@@ -1,5 +1,5 @@
 //
-//  MemoListTableViewController.h
+//  DetailViewController.h
 //  MemoObjC
 //
 //  Created by 이희석 on 2020/08/04.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MemoListTableViewController : UITableViewController
+@interface DetailViewController : UIViewController
 
 @end
 
