@@ -10,6 +10,9 @@
 		40381F8624D863B500AA4A90 /* MemoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40381F8524D863B500AA4A90 /* MemoListTableViewController.m */; };
 		40381F8924D869CA00AA4A90 /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40381F8824D869CA00AA4A90 /* ComposeViewController.m */; };
 		40381F8C24D876E100AA4A90 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40381F8B24D876E100AA4A90 /* DetailViewController.m */; };
+		40381F8F24DC5DFB00AA4A90 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40381F8E24DC5DFB00AA4A90 /* DataManager.m */; };
+		40381F9424DC642600AA4A90 /* Memo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 40381F9224DC642600AA4A90 /* Memo+CoreDataClass.m */; };
+		40381F9524DC642600AA4A90 /* Memo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 40381F9324DC642600AA4A90 /* Memo+CoreDataProperties.m */; };
 		4097C15524BF66930054A442 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4097C15424BF66930054A442 /* AppDelegate.m */; };
 		4097C15824BF66930054A442 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4097C15724BF66930054A442 /* SceneDelegate.m */; };
 		4097C15E24BF66930054A442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4097C15C24BF66930054A442 /* Main.storyboard */; };
@@ -27,6 +30,12 @@
 		40381F8824D869CA00AA4A90 /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
 		40381F8A24D876E100AA4A90 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		40381F8B24D876E100AA4A90 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		40381F8D24DC5DFB00AA4A90 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		40381F8E24DC5DFB00AA4A90 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		40381F9024DC642600AA4A90 /* Memo+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Memo+CoreDataProperties.h"; sourceTree = SOURCE_ROOT; };
+		40381F9124DC642600AA4A90 /* Memo+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Memo+CoreDataClass.h"; sourceTree = SOURCE_ROOT; };
+		40381F9224DC642600AA4A90 /* Memo+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Memo+CoreDataClass.m"; sourceTree = SOURCE_ROOT; };
+		40381F9324DC642600AA4A90 /* Memo+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Memo+CoreDataProperties.m"; sourceTree = SOURCE_ROOT; };
 		4097C15024BF66930054A442 /* baloMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baloMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4097C15324BF66930054A442 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4097C15424BF66930054A442 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +81,10 @@
 		4097C15224BF66930054A442 /* MemoObjC */ = {
 			isa = PBXGroup;
 			children = (
+				40381F9024DC642600AA4A90 /* Memo+CoreDataProperties.h */,
+				40381F9124DC642600AA4A90 /* Memo+CoreDataClass.h */,
+				40381F9224DC642600AA4A90 /* Memo+CoreDataClass.m */,
+				40381F9324DC642600AA4A90 /* Memo+CoreDataProperties.m */,
 				4097C16F24BF6E080054A442 /* Model */,
 				4097C15324BF66930054A442 /* AppDelegate.h */,
 				4097C15424BF66930054A442 /* AppDelegate.m */,
@@ -89,6 +102,8 @@
 				40381F8824D869CA00AA4A90 /* ComposeViewController.m */,
 				40381F8A24D876E100AA4A90 /* DetailViewController.h */,
 				40381F8B24D876E100AA4A90 /* DetailViewController.m */,
+				40381F8D24DC5DFB00AA4A90 /* DataManager.h */,
+				40381F8E24DC5DFB00AA4A90 /* DataManager.m */,
 			);
 			path = MemoObjC;
 			sourceTree = "<group>";
@@ -175,11 +190,14 @@
 				4097C17224BF6E400054A442 /* Memo.m in Sources */,
 				40381F8624D863B500AA4A90 /* MemoListTableViewController.m in Sources */,
 				4097C16924BF669C0054A442 /* main.m in Sources */,
+				40381F9524DC642600AA4A90 /* Memo+CoreDataProperties.m in Sources */,
 				40381F8C24D876E100AA4A90 /* DetailViewController.m in Sources */,
 				4097C16124BF66930054A442 /* MemoObjC.xcdatamodeld in Sources */,
 				40381F8924D869CA00AA4A90 /* ComposeViewController.m in Sources */,
 				4097C15524BF66930054A442 /* AppDelegate.m in Sources */,
+				40381F8F24DC5DFB00AA4A90 /* DataManager.m in Sources */,
 				4097C15824BF66930054A442 /* SceneDelegate.m in Sources */,
+				40381F9424DC642600AA4A90 /* Memo+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
