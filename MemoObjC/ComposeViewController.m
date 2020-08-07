@@ -23,6 +23,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    if ( self.editTarget != nil) {
+        self.navigationItem.title = @"메모 편집";
+        self.memoTextView.text = self.editTarget.content;
+    } else {
+        self.navigationItem.title = @"새 메모";
+        self.memoTextView.text = @"";
+    }
 }
 
 /*
@@ -38,7 +46,12 @@
 - (IBAction)save:(id)sender {
     NSString *memo = self.memoTextView.text;
     
-    [[DataManager sharedInstance] addNewMemo:memo];
+    if (self.editTarget != nil) {
+        self.editTarget.content = memo;
+        [[DataManager sharedInstance] saveContext];
+    } else {
+        [[DataManager sharedInstance] addNewMemo:memo];
+    }
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
