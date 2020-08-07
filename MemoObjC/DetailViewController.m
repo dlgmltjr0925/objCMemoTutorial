@@ -18,6 +18,7 @@
 
 - (IBAction)deleteMemo:(id)sender;
 
+- (IBAction)share:(id)sender;
 
 @end
 
@@ -76,6 +77,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)share:(id)sender {
+    NSString *memo = self.memo.content;
+    
+    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:@[memo] applicationActivities:nil];
+    
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 - (IBAction)deleteMemo:(id)sender {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"삭제 확인" message:@"메모를 삭제할까요?" preferredStyle:UIAlertControllerStyleAlert];

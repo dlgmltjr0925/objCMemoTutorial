@@ -211,6 +211,12 @@
                                             <segue destination="Ho6-S8-7Xl" kind="presentation" modalPresentationStyle="fullScreen" id="4MX-AL-eVF"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="QOh-st-Y8J"/>
+                                    <barButtonItem systemItem="action" id="v5t-9S-Bcp">
+                                        <connections>
+                                            <action selector="share:" destination="TGZ-vm-pMq" id="H0Y-Ap-2Hx"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
